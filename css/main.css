@@ -52,9 +52,9 @@ Tags:
 
 
 html {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust:     100%;
+    -ms-text-size-adjust:100%;
 }
 body { 
     color:#727272;
