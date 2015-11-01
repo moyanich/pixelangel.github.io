@@ -94,26 +94,29 @@ ul.sub-menu {
 
 /* # Header */
 
-.hero {
+.home {
     background: url(../img/hero-image.jpg) no-repeat 80%;
-    background-size: cover;
-  
+    background-size: cover;  
     -webkit-filter: saturate(1.5);
     filter: saturate(1.5);
 }
 .overlay {
-    background-image: linear-gradient(45deg, #662d8c, #ed1e79);
-    height: 500px;   
-    opacity: 0.1;
+    background-image: -webkit-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: -moz-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: -o-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    height: 600px; 
 }
 
-.hero img.logo {
-    border-radius: 50%;
+.home img.logo {
+    border-radius: 50%;f
     width: 10rem;
     padding: 2rem; 
 }
 
-
+.content-wrap {
+    margin-top:50px;
+}
 
 
 /* MEDIA QUERIES */
