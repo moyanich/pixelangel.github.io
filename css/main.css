@@ -1,13 +1,56 @@
 /*
-
-Content
-
-
-
-x.x.    OFF CANVAS NAVIGATION 
-
+Theme Name: moya
+Theme URI: http://underscores.me/
+Author: Amoy Nicholson
+Author URI: http://underscores.me/
+Description: Three Columns
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: moya
+Tags:
 
 */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+
+
+# General
+# Typography
+# Elements
+# Forms
+# Navigation
+    ## Links
+    ## Menus
+# Header
+
+
+
+
+# FlexSlider
+# Buttons
+    ## Standard Buttons
+    ## Call to Action Buttons
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+    ## Asides
+    ## Comments 
+# Infinite scroll
+# Media
+    ## Captions
+    ## Galleries
+# FrontPage
+    ## Introduction
+    ## Call to Action Section
+*/
+
+
+
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -19,7 +62,7 @@ body {
 }
 
 
-/*h1 {
+h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
@@ -33,127 +76,43 @@ h6
 {   
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
-*/
 
 
-/*OFF CANVAS NAVIGATION */
-
-
-.right-off-canvas-toggle .menu {
-    float: right;
-    display: block;
-    margin: 1.5rem 1rem;
+/* # Navigation */
+.sub-nav li {
+    list-style: none;
 }
+
+
+
+
+
+
+
+
+
+
+/* # Header */
+
 .hero {
-    background: url(../img/starrysky.png) no-repeat center center fixed;
+    background: url(../img/hero-image.jpg) no-repeat 80%;
     background-size: cover;
-    height: 100vh; 
+  
+    -webkit-filter: saturate(1.5);
+    filter: saturate(1.5);
 }
+.overlay {
+    background-image: linear-gradient(45deg, #662d8c, #ed1e79);
+    height: 500px;
+    background: opac;
+    opacity: 0.1;
+}
+
 .hero img.logo {
     border-radius: 50%;
     width: 10rem;
     padding: 2rem; 
 }
-.move-left .exit-off-canvas {
-    box-shadow: none; 
-}
-.move-left > .inner-wrap {
-    transform: translate3d(-85%, 0, 0);
-}
-.right-off-canvas-menu {
-    width: 65%;
-}
-.right-off-canvas-menu {
-    background: #fff;
-    padding: 3rem 3rem; 
-}
-.right-off-canvas-menu .side-nav.main li a:not(.button) {
-    font-weight: 100;
-    font-style: normal;
-    font-size: 3rem;
-    color: #323237;
-    text-transform: capitalize; 
-}
-.right-off-canvas-menu .side-nav.main li a:not(.button) .is-active, .right-off-canvas-menu .side-nav.main li a:not(.button):hover {
-    color: #f1f3f3;
-    background: transparent; 
-}
-.right-off-canvas-menu .side-nav.secondary li a:not(.button) {
-    color: #323237;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 1.2rem;
-    padding-bottom: 0rem;
-    text-transform: capitalize; 
-}
-.right-off-canvas-menu .side-nav.secondary li a:not(.button) .is-active, .right-off-canvas-menu .side-nav.secondary li a:not(.button):hover {
-    color: #f1f3f3;
-    background: transparent; 
-}
-.right-off-canvas-menu .social {
-    padding-left: 0.8rem; 
-}
-.right-off-canvas-menu .social li {
-    margin-left: 1.1rem; 
-}
-.right-off-canvas-menu .social i {
-    font-size: 1.7rem;
-    font-weight: 300;
-    color: #00d7ff;
-    padding: .01em .4em;
-    border-radius: 50%;
-    background: #333;
-    border: 2px solid #333; 
-}
-.right-off-canvas-menu .social i:hover {
-    background: #00d7ff;
-    color: #333;
-    transition: all 500ms ease-in .1s; 
-}
-.top-bar,
-.middle-bar,
-.bottom-bar {
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #333;
-    margin-bottom: 4px;
-    transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0; 
-}
-.top-bar, .bottom-bar {
-  transform-origin: 100% 50%; }
-
-.middle-bar {
-    transition-property: opacity;
-    transition-duration: 0.6s; 
-}
-.top-bar-close {
-    transform: rotate(-45deg);
-    background-color: #333; 
-}
-.middle-bar-close {
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 0.3s; 
-}
-.bottom-bar-close {
-  transform: rotate(45deg);
-  background-color: #333; 
-}
-
-/* Medium screens */
-@media only screen and (min-width: 40.063em) {
-        .move-left > .inner-wrap {
-            transform: translate3d(-35%, 0, 0); 
-        }
-        .right-off-canvas-menu {
-            width: 35%; 
-        }
-
-
-    } /* min-width 641px, medium screens */
-
-
 
 
 
