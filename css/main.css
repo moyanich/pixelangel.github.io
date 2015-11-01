@@ -42,7 +42,7 @@ h6
 .right-off-canvas-toggle .menu {
     float: right;
     display: block;
-    margin: 3.5rem 2.5rem; 
+    margin: 1.5rem 1rem;
 }
 .hero {
     background: url(../img/starrysky.png) no-repeat center center fixed;
@@ -64,7 +64,7 @@ h6
     width: 65%;
 }
 .right-off-canvas-menu {
-    background: #00d7ff;
+    background: #fff;
     padding: 3rem 3rem; 
 }
 .right-off-canvas-menu .side-nav.main li a:not(.button) {
