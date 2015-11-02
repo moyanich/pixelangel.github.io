@@ -1,0 +1,327 @@
+/*
+Theme Name: moya
+Theme URI: http://underscores.me/
+Author: Amoy Nicholson
+Author URI: http://underscores.me/
+Description: Three Columns
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: moya
+Tags:
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+
+
+# General
+# Typography
+# Elements
+# Forms
+# Navigation
+    ## Links
+    ## Menus
+# Header
+# CTA
+
+# Footer
+
+
+# FlexSlider
+# Buttons
+    ## Standard Buttons
+    ## Call to Action Buttons
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+    ## Asides
+    ## Comments 
+
+# Media
+    ## Captions
+    ## Galleries
+
+
+*/
+/*-----------------------------
+# General
+------------------------------*/
+/* line 71, ../sass/css.scss */
+html {
+  font-family: "Lato", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 76, ../sass/css.scss */
+body {
+  color: #727272;
+  font-size: 0.875rem;
+  /*(14/16px)*/
+  background-color: #f8f5f2;
+}
+
+/*-----------------------------
+# Typography
+------------------------------*/
+/* line 88, ../sass/css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+/* line 97, ../sass/css.scss */
+h1 {
+  color: #f8f5f2;
+  font-weight: 900;
+}
+
+/* line 101, ../sass/css.scss */
+h4 {
+  color: #edb83d;
+  font-family: "Montaga", serif;
+}
+
+/* line 106, ../sass/css.scss */
+a {
+  color: #39B54A;
+  outline: none;
+  color: #39B54A;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+/*-----------------------------
+# Elements
+------------------------------*/
+/*-----------------------------
+# Buttons
+------------------------------*/
+/*-----------------------------
+ ## Standard Buttons
+------------------------------*/
+/*-----------------------------
+ ## Call to Action Buttons
+------------------------------*/
+/* line 135, ../sass/css.scss */
+button, .button {
+  background-color: #70C28C;
+  border-color: #70C28C;
+}
+
+/*-----------------------------
+# Forms
+------------------------------*/
+/*-----------------------------
+# Navigation 
+------------------------------*/
+/*.sub-nav li {
+    list-style: none;
+}
+ul.sub-menu {
+    margin-bottom: 0;
+}
+*/
+/* line 161, ../sass/css.scss */
+.top-section {
+  padding-top: 5px;
+  background: #F5BA39;
+}
+
+/* line 165, ../sass/css.scss */
+.top-bar-section ul li > a {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 170, ../sass/css.scss */
+  .logo-wrapper {
+    position: relative;
+  }
+
+  /* line 173, ../sass/css.scss */
+  .logo-wrapper .logo {
+    position: absolute;
+    /* left: 50%;
+     right: 50%;     
+     margin-left: -46px; */
+    width: 120px;
+    height: 111px;
+    position: absolute;
+    top: -2px;
+    z-index: 99;
+  }
+
+  /* line 185, ../sass/css.scss */
+  .contain-to-grid, .top-section {
+    background: #F5BA39;
+  }
+
+  /* line 188, ../sass/css.scss */
+  .contain-to-grid, .top-bar, .top-bar-section li:not(.has-form) a:not(.button) {
+    background: #F5BA39;
+  }
+
+  /* line 191, ../sass/css.scss */
+  .top-bar-section ul li {
+    padding-right: 10px;
+    background: #F5BA39;
+  }
+
+  /* line 195, ../sass/css.scss */
+  .top-bar-section ul li > a {
+    color: #555555;
+    font-size: 1rem;
+  }
+
+  /* line 199, ../sass/css.scss */
+  .top-bar {
+    background: none;
+  }
+
+  /* line 202, ../sass/css.scss */
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: #F5BA39;
+    color: #D84F57;
+    transition: color ease-in 0.03s;
+  }
+
+  /* line 207, ../sass/css.scss */
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #F5BA39;
+    background: #F5BA39;
+  }
+
+  /* line 211, ../sass/css.scss */
+  .top-bar-section ul li:hover:not(.has-form) > a {
+    background-color: #F5BA39;
+    color: #D84F57;
+    background: #F5BA39;
+    transition: color ease-in 0.03s;
+  }
+}
+/*-----------------------------
+## Links
+------------------------------*/
+/* line 224, ../sass/css.scss */
+ul.social {
+  margin-bottom: 0;
+}
+
+/* line 227, ../sass/css.scss */
+.social li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+/* line 232, ../sass/css.scss */
+.social i:hover {
+  color: #D7B399;
+  transition: color ease-in 0.03s;
+}
+
+/* line 236, ../sass/css.scss */
+#top-social li a, .social li a {
+  color: #f8f5f2;
+}
+
+/*-----------------------------
+ # Header
+ ----------------------------- */
+/* line 244, ../sass/css.scss */
+.home {
+  background: url(../img/9-indie.jpg) no-repeat 60% 80%;
+  /*background: url(../img/hero-image.jpg) no-repeat 80%;*/
+  background-size: cover;
+  -webkit-filter: saturate(1.5);
+  filter: saturate(1.5);
+}
+
+/* line 251, ../sass/css.scss */
+.overlay {
+  /*background-image: -webkit-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+  background-image: -moz-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+  background-image: -o-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+  background-image: linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26)); 
+  background: rgba(0, 11, 41, 0.91); */
+  height: 500px;
+  /*background:rgba(248, 245, 242, 0.81)*/
+}
+
+/* line 260, ../sass/css.scss */
+.content-wrap {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 267, ../sass/css.scss */
+  .content-wrap {
+    margin-top: 80px;
+    padding: 50px;
+  }
+}
+/*-----------------------------
+# CTA
+------------------------------*/
+/* line 277, ../sass/css.scss */
+section.cta {
+  background: #F5BA39;
+  height: 100px;
+  padding: 15px 0;
+}
+
+/* line 282, ../sass/css.scss */
+.cta h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 290, ../sass/css.scss */
+  section.cta {
+    height: 60px;
+    padding: 10px 0;
+  }
+}
+/* # Footer */
+/* line 303, ../sass/css.scss */
+footer {
+  background: #5e5e5e;
+  color: #999;
+}
+
+/* line 307, ../sass/css.scss */
+.footer-inner {
+  margin-top: 20px;
+}
+
+/* line 310, ../sass/css.scss */
+footer p {
+  font-size: .8rem;
+}
+
+/* Small screens */
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* Large screens */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/*   XLarge screens */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* XXLarge screens */
+/* min-width 1921px, xxlarge screens */

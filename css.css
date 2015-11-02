@@ -25,7 +25,7 @@ Tags:
     ## Menus
 # Header
 
-
+# Footer
 
 
 # FlexSlider
@@ -40,13 +40,16 @@ Tags:
     ## Posts and pages
     ## Asides
     ## Comments 
-# Infinite scroll
+
 # Media
     ## Captions
     ## Galleries
-# FrontPage
-    ## Introduction
-    ## Call to Action Section
+
+
+
+
+
+
 */
 
 
@@ -61,12 +64,6 @@ body {
     font-size: 0.875; (14/16px)
 }
 
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
 h1,
 h2,
 h3,
@@ -77,20 +74,47 @@ h6
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+
 
 /* # Navigation */
+
 .sub-nav li {
     list-style: none;
 }
 ul.sub-menu {
     margin-bottom: 0;
 }
+.top-section {
+    margin-top: 5px;
+}
 
 
 
 
 
+ 
+/* ## Links */
+ul.social {
+    margin-bottom: 0;
+}
+.social li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;    
+}
+.social li a {    
+    color:#fff;
+}
+#top-social li a {
 
+    color:#eee;
+}
 
 /* # Header */
 
@@ -113,10 +137,36 @@ ul.sub-menu {
     width: 10rem;
     padding: 2rem; 
 }
-
-.content-wrap {
-    margin-top:50px;
+.content-wrap{
+    margin-top:200px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.63);
 }
+
+
+/* # Footer */
+footer {
+    background: #5e5e5e;
+    color:#999;
+}
+.footer-inner {
+    margin-top: 20px;
+}
+footer p {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */

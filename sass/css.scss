@@ -1,0 +1,348 @@
+/*
+Theme Name: moya
+Theme URI: http://underscores.me/
+Author: Amoy Nicholson
+Author URI: http://underscores.me/
+Description: Three Columns
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: moya
+Tags:
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+
+
+# General
+# Typography
+# Elements
+# Forms
+# Navigation
+    ## Links
+    ## Menus
+# Header
+# CTA
+
+# Footer
+
+
+# FlexSlider
+# Buttons
+    ## Standard Buttons
+    ## Call to Action Buttons
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+    ## Asides
+    ## Comments 
+
+# Media
+    ## Captions
+    ## Galleries
+
+
+*/
+
+
+
+
+$font-stack-body:'Lato', sans-serif;
+$font-stack-heading: "Montserrat", Helvetica, Arial, sans-serif;
+$font-stack-secondary-headings: 'Montaga', serif;
+$font-stack-logo: 'Montserrat Alternates', sans-serif;
+$body-color:#f8f5f2;
+$primary-color: #727272;
+$secondary-color: #00b8b8;
+$social-icons:#f8f5f2;
+$hover-color:#D84F57;
+
+
+
+/*-----------------------------
+# General
+------------------------------*/
+
+html {
+	 font-family: $font-stack-body;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:100%;	
+}
+body { 
+    color:$primary-color;
+    font-size: 0.875rem; /*(14/16px)*/
+    background-color:$body-color;
+}
+
+
+
+
+/*-----------------------------
+# Typography
+------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{   
+    font-family: $font-stack-heading;
+}
+h1 {	
+    color:#f8f5f2;
+    font-weight: 900;
+}
+h4 {    
+    color: #edb83d;
+    font-family: $font-stack-secondary-headings;
+}
+
+a {
+    color: #39B54A;
+    outline: none;
+    color: #39B54A;
+    text-decoration: none;
+    line-height: inherit;
+}
+
+
+
+
+
+/*-----------------------------
+# Elements
+------------------------------*/
+
+
+/*-----------------------------
+# Buttons
+------------------------------*/
+/*-----------------------------
+ ## Standard Buttons
+------------------------------*/
+
+
+/*-----------------------------
+ ## Call to Action Buttons
+------------------------------*/
+
+button, .button {    
+    background-color: #70C28C;
+    border-color: #70C28C;
+}
+
+
+/*-----------------------------
+# Forms
+------------------------------*/
+
+
+
+
+
+/*-----------------------------
+# Navigation 
+------------------------------*/
+
+
+/*.sub-nav li {
+    list-style: none;
+}
+ul.sub-menu {
+    margin-bottom: 0;
+}
+*/
+.top-section {
+    padding-top: 5px;
+    background: #F5BA39;
+}
+.top-bar-section ul li > a {   
+    font-family: $font-stack-heading;
+    font-weight: 700;    
+}
+	@media only screen and (min-width: 40.063em) { 		
+	  	.logo-wrapper {
+	    	position: relative;
+	  	}
+	  	.logo-wrapper .logo {	    
+		    position: absolute;
+		   /* left: 50%;
+		    right: 50%;     
+		    margin-left: -46px; */
+		     width: 120px;
+		    height: 111px;
+		    position: absolute;
+		    top: -2px;
+		   
+		    z-index: 99;
+	  	} 
+		.contain-to-grid, .top-section { 
+	  		background: #F5BA39;
+	  	}
+	  	.contain-to-grid, .top-bar, .top-bar-section li:not(.has-form) a:not(.button) { 
+	  		background: #F5BA39; 
+	  	}
+	  	.top-bar-section ul li {   
+		    padding-right: 10px;
+		    background: #F5BA39;
+		}
+	  	.top-bar-section ul li > a {
+	    	color: #555555;
+	    	font-size: 1rem;  
+		}
+		.top-bar {
+	   	 	background: none;   
+		}
+		.top-bar-section li:not(.has-form) a:not(.button):hover {
+		    background: #F5BA39;
+		    color:$hover-color;
+		    transition: color ease-in 0.03s;
+		}
+		.top-bar-section li:not(.has-form) a:not(.button):hover {
+		    background-color: #F5BA39;
+		    background: #F5BA39;
+		}
+		.top-bar-section ul li:hover:not(.has-form) > a {
+		    background-color: #F5BA39;
+		    color: $hover-color;
+		    background: #F5BA39;
+		    transition: color ease-in 0.03s;
+		}
+	}
+
+
+/*-----------------------------
+## Links
+------------------------------*/
+
+ul.social {
+    margin-bottom: 0;
+}
+.social li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 30px;    
+}
+.social i:hover {
+    color:#D7B399; 
+    transition: color ease-in 0.03s;
+}
+#top-social li a, .social li a {    
+    color:$social-icons;
+}
+
+/*-----------------------------
+ # Header
+ ----------------------------- */
+
+.home {
+	background: url(../img/9-indie.jpg) no-repeat 60% 80%;
+    /*background: url(../img/hero-image.jpg) no-repeat 80%;*/
+    background-size: cover; 
+    -webkit-filter: saturate(1.5);
+    filter: saturate(1.5);
+}
+.overlay {
+    /*background-image: -webkit-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: -moz-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: -o-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
+    background-image: linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26)); 
+    background: rgba(0, 11, 41, 0.91); */
+    height: 500px;        
+    /*background:rgba(248, 245, 242, 0.81)*/
+}
+.content-wrap {
+	margin-top:50px;
+   	padding: 20px;
+}
+
+
+	@media only screen and (min-width: 40.063em) {
+		.content-wrap{
+		    margin-top:80px;
+    		padding: 50px;   			
+		}
+	}
+
+
+/*-----------------------------
+# CTA
+------------------------------*/
+section.cta {
+    background: #F5BA39;
+    height: 100px;
+    padding:15px 0;
+}
+.cta h6 {
+	text-transform:uppercase;
+	font-weight: 600;
+}
+
+
+	@media only screen and (min-width: 40.063em) {
+	
+		section.cta {		  
+		    height: 60px;
+		    padding: 10px 0;
+		} 		
+	}
+
+
+
+
+
+
+
+/* # Footer */
+footer {
+    background: #5e5e5e;
+    color:#999;
+}
+.footer-inner {
+    margin-top: 20px;
+}
+footer p {
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+/* Small screens */
+
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/*   XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+
+
+
+
+
+
