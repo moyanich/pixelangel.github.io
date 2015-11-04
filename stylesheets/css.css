@@ -22,8 +22,13 @@ Tags:
 # Navigation
     ## Links
     ## Menus
+
 # Header
 # CTA
+# Courses
+# Portfolio
+	## MixItUp 
+	## og-grid
 
 # Footer
 
@@ -50,25 +55,29 @@ Tags:
 /*-----------------------------
 # General
 ------------------------------*/
-/* line 71, ../sass/css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Lato", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 76, ../sass/css.scss */
 body {
   color: #727272;
   font-size: 0.875rem;
   /*(14/16px)*/
+  font-family: "Lato", sans-serif;
   background-color: #f8f5f2;
 }
 
 /*-----------------------------
 # Typography
 ------------------------------*/
-/* line 88, ../sass/css.scss */
 h1,
 h2,
 h3,
@@ -78,19 +87,17 @@ h6 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-/* line 97, ../sass/css.scss */
 h1 {
   color: #f8f5f2;
   font-weight: 900;
 }
 
-/* line 101, ../sass/css.scss */
 h4 {
   color: #edb83d;
   font-family: "Montaga", serif;
+  font-style: italic;
 }
 
-/* line 106, ../sass/css.scss */
 a {
   color: #39B54A;
   outline: none;
@@ -102,16 +109,37 @@ a {
 /*-----------------------------
 # Elements
 ------------------------------*/
+hr.colored {
+  border-color: #70C28C;
+}
+
+hr {
+  max-width: 100px;
+  border-top: 4px solid white;
+  height: 2px;
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  hr {
+    max-width: 200px;
+    /* margin: 20px auto;*/
+  }
+}
 /*-----------------------------
 # Buttons
 ------------------------------*/
+button.tiny, .button.tiny {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 /*-----------------------------
  ## Standard Buttons
 ------------------------------*/
 /*-----------------------------
  ## Call to Action Buttons
 ------------------------------*/
-/* line 135, ../sass/css.scss */
 button, .button {
   background-color: #70C28C;
   border-color: #70C28C;
@@ -130,25 +158,21 @@ ul.sub-menu {
     margin-bottom: 0;
 }
 */
-/* line 161, ../sass/css.scss */
 .top-section {
   padding-top: 5px;
   background: #F5BA39;
 }
 
-/* line 165, ../sass/css.scss */
 .top-bar-section ul li > a {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 170, ../sass/css.scss */
   .logo-wrapper {
     position: relative;
   }
 
-  /* line 173, ../sass/css.scss */
   .logo-wrapper .logo {
     position: absolute;
     /* left: 50%;
@@ -161,47 +185,39 @@ ul.sub-menu {
     z-index: 99;
   }
 
-  /* line 185, ../sass/css.scss */
   .contain-to-grid, .top-section {
     background: #F5BA39;
   }
 
-  /* line 188, ../sass/css.scss */
   .contain-to-grid, .top-bar, .top-bar-section li:not(.has-form) a:not(.button) {
     background: #F5BA39;
   }
 
-  /* line 191, ../sass/css.scss */
   .top-bar-section ul li {
     padding-right: 10px;
     background: #F5BA39;
   }
 
-  /* line 195, ../sass/css.scss */
   .top-bar-section ul li > a {
     color: #555555;
     font-size: 1rem;
   }
 
-  /* line 199, ../sass/css.scss */
   .top-bar {
     background: none;
   }
 
-  /* line 202, ../sass/css.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background: #F5BA39;
     color: #D84F57;
     transition: color ease-in 0.03s;
   }
 
-  /* line 207, ../sass/css.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #F5BA39;
     background: #F5BA39;
   }
 
-  /* line 211, ../sass/css.scss */
   .top-bar-section ul li:hover:not(.has-form) > a {
     background-color: #F5BA39;
     color: #D84F57;
@@ -212,25 +228,21 @@ ul.sub-menu {
 /*-----------------------------
 ## Links
 ------------------------------*/
-/* line 224, ../sass/css.scss */
 ul.social {
   margin-bottom: 0;
 }
 
-/* line 227, ../sass/css.scss */
 .social li {
   list-style: none;
   display: inline-block;
   padding-right: 30px;
 }
 
-/* line 232, ../sass/css.scss */
 .social i:hover {
   color: #D7B399;
   transition: color ease-in 0.03s;
 }
 
-/* line 236, ../sass/css.scss */
 #top-social li a, .social li a {
   color: #f8f5f2;
 }
@@ -238,7 +250,6 @@ ul.social {
 /*-----------------------------
  # Header
  ----------------------------- */
-/* line 244, ../sass/css.scss */
 .home {
   background: url(../img/9-indie.jpg) no-repeat 60% 80%;
   /*background: url(../img/hero-image.jpg) no-repeat 80%;*/
@@ -247,25 +258,21 @@ ul.social {
   filter: saturate(1.5);
 }
 
-/* line 251, ../sass/css.scss */
 .overlay {
   /*background-image: -webkit-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
   background-image: -moz-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
   background-image: -o-linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));
-  background-image: linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26)); 
-  background: rgba(0, 11, 41, 0.91); */
+  background-image: linear-gradient(45deg, rgba(102, 45, 140, 0.26), rgba(237,30,121, 0.26));  */
   height: 500px;
-  /*background:rgba(248, 245, 242, 0.81)*/
+  background: rgba(0, 0, 0, 0.51);
 }
 
-/* line 260, ../sass/css.scss */
 .content-wrap {
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 20px;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 267, ../sass/css.scss */
   .content-wrap {
     margin-top: 80px;
     padding: 50px;
@@ -274,39 +281,415 @@ ul.social {
 /*-----------------------------
 # CTA
 ------------------------------*/
-/* line 277, ../sass/css.scss */
 section.cta {
   background: #F5BA39;
-  height: 100px;
-  padding: 15px 0;
+  height: 150px;
+  padding: 25px 0;
 }
 
-/* line 282, ../sass/css.scss */
 .cta h6 {
   text-transform: uppercase;
   font-weight: 600;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 290, ../sass/css.scss */
   section.cta {
     height: 60px;
     padding: 10px 0;
   }
 }
-/* # Footer */
-/* line 303, ../sass/css.scss */
+/*-----------------------------
+# Courses
+------------------------------*/
+.well {
+  height: 150px;
+  background: #ccc;
+}
+
+.well2 {
+  height: 150px;
+  background: #eee;
+}
+
+.recent-courses {
+  padding: 20px;
+  background-color: #fff;
+}
+
+ul.certs {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+ul.certs li {
+  font-size: 0.8125rem;
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  ul.certs {
+    text-indent: 0;
+  }
+
+  ul.certs li {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+}
+.course-logo {
+  float: right;
+}
+
+.small-logos {
+  width: 90px;
+  height: 100%;
+  max-width: 100%;
+}
+
+/*-----------------------------
+# Portfolio
+------------------------------*/
+section#portfolio {
+  background: #43ac6a;
+}
+
+/*-----------------------------
+## MixItUp
+------------------------------*/
+.controls {
+  padding: 2%;
+  color: #eee;
+}
+
+label {
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button {
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active {
+  background: #68b8c4;
+}
+
+button:focus {
+  outline: 0 none;
+}
+
+button + label {
+  margin-left: 1em;
+}
+
+.mix-container {
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  -webkit-backface-visibility: hidden;
+}
+
+.mix-container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.mix-container .mix,
+.mix-container .gap {
+  display: inline-block;
+  width: 49%;
+}
+
+.mix-container .mix {
+  text-align: left;
+  background: #fff;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.mix-container .mix.category-1 {
+  border-top: 2px solid limegreen;
+}
+
+.mix-container .mix.category-2 {
+  border-top: 2px solid yellow;
+}
+
+.mix-container .mix:after {
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.mix-container .mix:before {
+  content: '';
+  display: inline-block;
+  /*padding-top: 60%;*/
+}
+
+@media all and (max-width: 40em) {
+  .mix-container .mix, .container .gap {
+    width: 32%;
+  }
+}
+@media all and (min-width: 40.063em) {
+  .mix-container .mix, .mix-container .gap {
+    width: 23.5%;
+  }
+}
+/*-----------------------------
+## og-grid
+------------------------------*/
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #222;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+  position: absolute;
+  background: #222222;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.og-details {
+  padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+  text-align: center;
+}
+
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.og-details h3 {
+  font-weight: 300;
+  font-size: 52px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+}
+
+.og-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999;
+}
+
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #333;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+}
+
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.og-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .og-expander h3 {
+    font-size: 32px;
+  }
+
+  .og-expander p {
+    font-size: 13px;
+  }
+
+  .og-expander a {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  og-fullimg {
+    display: none;
+  }
+
+  .og-details {
+    float: none;
+    width: 100%;
+  }
+}
+/*-----------------------------
+# Footer 
+------------------------------*/
 footer {
   background: #5e5e5e;
   color: #999;
 }
 
-/* line 307, ../sass/css.scss */
 .footer-inner {
   margin-top: 20px;
 }
 
-/* line 310, ../sass/css.scss */
 footer p {
   font-size: .8rem;
 }
